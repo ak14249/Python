@@ -1,0 +1,319 @@
+###################PYTHON###################
+
+What is python?.
+Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability
+with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help 
+programmers write clear, logical code for small and large-scale projects.
+
+
+
+1. Basics
+Here we are wotking on python3.8.2 version and in python the file extension should be .py (like python1.py). Sipmly via vi or vim
+editor we can edit the files here with .py extention. In python we can start programming in a very simple way, here we are
+printing "hello I am Abihshek" in a example:
+vim test1.py
+print("Hello, I am Abhishek")
+Now save & exit
+We can run it via using command: python test1.py
+
+2. Variables
+Here we are working on same file as mentioned above and also running it via above mentioned command in variable section also.
+See the variable example below:
+x = 10
+y = "Abhishek"
+print(x)
+print(y)
+print(type(x))
+print(type(y))
+print("Hello "+y)
+print(len(y))
+print("===========")
+x = 15
+y = 5
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+print(x%y)
+
+3. Syntax
+Now we see the syntax example:
+if 20>15:
+  print("20 is greater then 15")
+
+4. Function
+Now we see the function example:
+(I) def sum(a,b):
+      print(a+b)
+    x = sum(10,15)
+
+(II) def Car():
+	   print("I am in the car")
+
+     Car()
+
+5. CommandLine
+Now we see the CommandLine example:
+python test1.py (in command line we can run the file with mentioned command)
+
+6. Comments
+We can add # in start of the line for comments the line
+# x = 10
+# yprint("===========")
+# x = 15
+# y = 5
+
+7. Numbers
+In python we no need to define data type, it's already defined:
+x = 10
+y = 5.5
+z = 78j
+print(type(x))
+print(type(y))
+print(type(z))
+
+x = int(10) #10
+y = int(12.3) #12
+z = float(15) #15.0
+p = str(5) #"5"
+print(x,y,z,p)
+
+8. Strings
+In string everything will recognise ad string.
+x = "    Hello, I am Abhishek.....       "
+print(x)
+print(x.strip())	#(It's remove all spaces)
+print(x[8])			#(It's print 8th charecter)
+print(x[11:24])		#(It's print 11th to 24th charecter)
+print(x.lower())	#(It's print in lower case)
+print(x.upper())	#(It's print in upper case)
+print(len(x))		#(It's print total length)
+
+9. Input
+Here we can take input from user:
+name = input("Enter your name here: ")
+print("Hello "+name)
+
+10. if,else,elif
+Here below is the examples:
+ex1:
+if 5>3:
+  print("5 is greater then 3")
+ex2:
+x= 0
+if x>0:
+  print("This is a positive number")
+elif x==0:
+  print("This is zero")
+else:
+  print("This is a negative number")
+
+11. for loop
+Here below is the examples:
+ex1:
+x= [1,2,3,4,5]
+sum= 0
+for val in x:
+  sum=sum+val
+print("The total is ",sum)
+ex2:
+Student= ["Abhi", "Viv", "Nav"]
+for val in Student:
+  print(val)
+else:
+  print("No Student left")
+
+12. while loop
+Here below is the examples:
+num= int(input("Please enter the number: "))
+i= 1
+while i<=10:
+  a=i*num
+  print(num, "*" ,i,"=",a)
+  i=i+1
+  
+13. Functions   
+Here below is the examples:
+def fun():
+  print("Hello")
+fun()
+
+def funName(name="Dubey"):
+  print("Hi, "+name)
+funName()
+funName("Abhi")
+
+def sum(a,b,c):
+  print(a+b+c)
+sum(10,20,30)
+
+def sumReturn(a,b):
+  """This is a function to calculate the sum of 2 numbers"""
+  return(a+b)
+x=sumReturn(20,30)
+print(x)
+
+14. How to create classes, functions & objects for class?
+class Myclass():                #This is a class
+  name="Abhishek"
+  age="28"
+  profession="Engineer"
+  
+  def __init__(self,name,sex):  #This is a fuction
+    self.name=name              #This is a object
+    self.sex=sex                #This is a object
+
+  def sum(self,a,b,c):          #This is a fuction
+    print(a+b+c)
+x=Myclass("Vivek","Male")
+print(x.name)
+print(x.profession)
+x.sum(5,10,15)
+print(x.name)
+print(x.sex)
+
+15. There are 4 Collection data types in Python (List  |  Tuple  |  Set  |  Dictionary)
+List      	[]       ordered | indexed | changeable | duplicates
+Tuple    	()       ordered | indexed | unchangeable | duplicates
+Set       	{}       unordered | unindexed | no duplicates
+Dictionary  {K:V}    unordered | changeable | indexed | no duplicates
+
+List [] examples:
+mylist=["Delhi", "Agra", "Mathura"]
+print(mylist)
+print(mylist[1])
+
+mylist[1]="Kanpur"
+print(mylist)
+
+for val in mylist:
+  print(val)
+print(len(mylist))
+
+mylist.append("Lucknow")
+print(mylist)
+mylist.insert(4,"Unnao")
+print(mylist)
+
+mylist.remove("Mathura")
+print(mylist)
+mylist.pop(1)         #It will delete from first index position & by default it's removed from last index position
+print(mylist)
+
+del mylist[2]
+print(mylist)
+mylist.clear()        #It will clear entire indexes
+print(mylist)
+
+fruits=["Apples", "Banana", "Cherry"]
+print(fruits)
+fruits.reverse()
+print(fruits)
+
+mylist2=["Apples", 1,2,3.0]
+print(mylist2)
+mylist3=["Apples", [1,2,3], ["a","b","c"]]
+print(mylist3)
+print(mylist3[2][1])
+
+lst1=["Abhishek", "Vivek", "sakshi",1,2,3,4,5,6,7,8,9]
+lst2=[]
+for val in lst1:
+  if type(val)==str:
+    lst2.append(val)
+print(lst2)
+
+Tuple () examples:
+myTuple=("Apples", "Banana", "Cherry")
+print(myTuple)
+print(myTuple[2])
+print(myTuple[0:3])
+print(myTuple[-2])
+
+for val in myTuple:
+  print(val)
+
+print(len(myTuple))
+
+myTuple2=("Apples", (1,2,3), ["Ram", "Shyam", "Mohan"])
+print(myTuple2)
+print(myTuple2[2][1])
+
+myTuple2[2][1]="Sohan"
+print(myTuple2)
+
+print("Shyam" in myTuple2[2])     #False
+print("Sohan" in myTuple2[2])     #True
+
+Sets {} examples:
+mySet={"Shirt", "Paint", "Lower"}
+print(mySet)
+print("Shirt" in mySet)
+
+for val in mySet:
+  print(val)
+
+mySet.add("Cap")
+print(mySet)
+mySet.update(["Watch", "Ring", "Socks"])
+print(mySet)
+
+print(len(mySet))
+mySet.remove("Ring")
+print(mySet)
+mySet.discard("Watch")
+print(mySet)
+
+mySet.pop()
+print(mySet)
+mySet.clear()
+print(mySet)
+del mySet
+
+mySet2={"Apples", (1,2,3), "a","b"}   #Convert set to list
+print(mySet2)
+mylist=list(mySet2)
+print(mylist)
+
+# UNION | INTERSECTION | DIFF | SYMMETRIC DIFF
+A = {'x', 'y', 5, 6, 7}
+B = {'y', 'z', 6, 7, 8}
+print(A.union(B))
+print(A.intersection(B))
+print(A.difference(B))
+print(A.symmetric_difference(B))
+
+Dictionary {K:V} examples:
+myDict={"Class" : "Engineer", "Name" : "Ayush", "Age" : "25"}
+print(myDict)
+print(myDict["Class"])
+print(myDict.get("Name"))
+print(myDict.values())
+
+for val in myDict:
+  print(myDict[val])
+
+for x,y in myDict.items():
+  print(x,y)
+
+myDict["Name"]="Prateek"
+print(myDict)
+myDict["Designation"]="Linux Admin"
+print(myDict)
+
+myDict.pop("Designation") #It will remove Designation from dictionary
+print(myDict)
+myDict.popitem()          #It will remove last entry
+print(myDict)
+
+del myDict["Class"]
+print(myDict)
+myDict.clear()            #It will clrear all dictionary
+print(myDict)
+
+
+
+
+
+
+
